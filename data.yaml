@@ -1,0 +1,15 @@
+path: dataset
+
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 3
+names: ['No_Helmet', 'Helmet', 'Person']
+
+roboflow:
+  workspace: tanishs-workspace-po6cp
+  project: helmet-detection-yuaza-tiawt
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/tanishs-workspace-po6cp/helmet-detection-yuaza-tiawt/dataset/1

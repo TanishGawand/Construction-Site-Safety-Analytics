@@ -1,0 +1,38 @@
+# Dataset with 249 images splitted into 30 instances for no helmet and 219 instances for Helmet
+
+EarlyStopping: Training stopped early as no improvement observed in last 20 epochs. Best results observed at epoch 35, best model saved as best.pt.
+To update EarlyStopping(patience=20) pass a new patience value, i.e. `patience=300` or use `patience=0` to disable EarlyStopping.
+
+55 epochs completed in 0.087 hours.
+Optimizer stripped from C:\Users\Tanish\OneDrive\Desktop\ConstructionSite_Project\runs\detect\helmet_finetuned\weights\last.pt, 6.3MB
+Optimizer stripped from C:\Users\Tanish\OneDrive\Desktop\ConstructionSite_Project\runs\detect\helmet_finetuned\weights\best.pt, 6.3MB
+
+Validating C:\Users\Tanish\OneDrive\Desktop\ConstructionSite_Project\runs\detect\helmet_finetuned\weights\best.pt...
+Ultralytics 8.4.31  Python-3.10.0 torch-2.5.1+cu121 CUDA:0 (NVIDIA GeForce RTX 3050 A Laptop GPU, 4094MiB)
+Model summary (fused): 73 layers, 3,006,233 parameters, 0 gradients, 8.1 GFLOPs
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 4/4 1.4it/s 2.9s
+                   all         54        249      0.749      0.847      0.868      0.646
+             No_Helmet          6         30       0.61      0.867      0.838      0.622
+                Helmet         54        219      0.887      0.828      0.897       0.67
+Speed: 0.4ms preprocess, 26.6ms inference, 0.0ms loss, 5.4ms postprocess per image
+
+
+Validating C:\Users\Tanish\OneDrive\Desktop\ConstructionSite_Project\runs\detect\helmet_bigdata\weights\best.pt...
+Ultralytics 8.4.31  Python-3.10.0 torch-2.5.1+cu121 CUDA:0 (NVIDIA GeForce RTX 3050 A Laptop GPU, 4094MiB)
+Model summary (fused): 73 layers, 3,006,038 parameters, 0 gradients, 8.1 GFLOPs
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 61/61 5.0it/s 12.2s
+                   all        973       2453      0.981      0.447      0.489       0.41
+             No_Helmet        944       2435      0.961      0.893      0.962      0.814
+                Helmet         17         18          1          0     0.0159     0.0067
+Speed: 0.3ms preprocess, 8.4ms inference, 0.0ms loss, 1.0ms postprocess per image
+Results saved to C:\Users\Tanish\OneDrive\Desktop\ConstructionSite_Project\runs\detect\helmet_bigdata
+
+Validating C:\Users\Tanish\OneDrive\Desktop\ConstructionSite_Project\runs\detect\helmet_bigdata\weights\best.pt...
+Ultralytics 8.4.31  Python-3.10.0 torch-2.5.1+cu121 CUDA:0 (NVIDIA GeForce RTX 3050 A Laptop GPU, 4094MiB)
+Model summary (fused): 73 layers, 3,006,038 parameters, 0 gradients, 8.1 GFLOPs
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 10/10 3.8it/s 2.7s
+                   all        149        696      0.876      0.857      0.897      0.548
+                  head         23        103      0.842      0.864      0.879      0.549
+                helmet        141        593      0.911       0.85      0.915      0.547
+Speed: 0.3ms preprocess, 10.2ms inference, 0.0ms loss, 1.4ms postprocess per image
+Results saved to C:\Users\Tanish\OneDrive\Desktop\ConstructionSite_Project\runs\detect\helmet_bigdata

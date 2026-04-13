@@ -1,0 +1,19 @@
+# Datasets
+dataset/
+dataset2/
+dataset3/
+
+# Training outputs
+runs/
+
+# Models
+*.pt
+
+# Videos & images
+*.mp4
+*.jpg
+*.png
+
+# Others
+*.log
+__pycache__/
